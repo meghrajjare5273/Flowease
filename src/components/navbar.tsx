@@ -11,7 +11,7 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-md">
-      <div className="container flex h-16 items-center justify-between">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -101,7 +101,7 @@ export function Navbar() {
         </motion.div>
       )}
 
-      <div className="container">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="border-b" />
       </div>
     </header>

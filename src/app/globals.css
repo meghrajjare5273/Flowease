@@ -128,6 +128,12 @@
   h6 {
     font-family: var(--font-playfair);
   }
+
+  /* Add container max-width control */
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8;
+    max-width: 1400px;
+  }
 }
 
 /* Custom styles */

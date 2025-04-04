@@ -7,7 +7,7 @@ import Image from "next/image";
 export function HeroSection() {
   return (
     <section className="relative overflow-hidden py-20 md:py-28 hero-gradient">
-      <div className="container relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}

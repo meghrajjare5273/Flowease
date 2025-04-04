@@ -1,26 +1,94 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 20deg 33% 98%;
+    --foreground: 240deg 10% 3.9%;
+    --card: 0deg 0% 100%;
+    --card-foreground: 240deg 10% 3.9%;
+    --popover: 0deg 0% 100%;
+    --popover-foreground: 240deg 10% 3.9%;
+    --primary: 346deg 77% 80%;
+    --primary-foreground: 355deg 100% 97%;
+    --secondary: 355deg 100% 97%;
+    --secondary-foreground: 240deg 5.9% 10%;
+    --muted: 240deg 4.8% 95.9%;
+    --muted-foreground: 240deg 3.8% 46.1%;
+    --accent: 9deg 100% 96%;
+    --accent-foreground: 240deg 5.9% 10%;
+    --destructive: 0deg 84.2% 60.2%;
+    --destructive-foreground: 0deg 0% 98%;
+    --border: 240deg 5.9% 90%;
+    --input: 240deg 5.9% 90%;
+    --ring: 346deg 77% 80%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 20deg 14.3% 4.1%;
+    --foreground: 0deg 0% 98%;
+    --card: 24deg 9.8% 10%;
+    --card-foreground: 0deg 0% 98%;
+    --popover: 0deg 0% 9%;
+    --popover-foreground: 0deg 0% 98%;
+    --primary: 346deg 77% 80%;
+    --primary-foreground: 355deg 100% 97%;
+    --secondary: 240deg 3.7% 15.9%;
+    --secondary-foreground: 0deg 0% 98%;
+    --muted: 0deg 0% 15%;
+    --muted-foreground: 240deg 5% 64.9%;
+    --accent: 12deg 6.5% 15.1%;
+    --accent-foreground: 0deg 0% 98%;
+    --destructive: 0deg 62.8% 30.6%;
+    --destructive-foreground: 0deg 85.7% 97.3%;
+    --border: 240deg 3.7% 15.9%;
+    --input: 240deg 3.7% 15.9%;
+    --ring: 346deg 77% 80%;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* @layer base {
+  /* * {
+    @apply border-border;
+  } */
+  /* body {
+    @apply bg-background text-foreground;
+  } */
+  /* h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-playfair;
+  }
+  p,
+  span,
+  a,
+  button,
+  li {
+    @apply font-poppins;
+  }
+} */ 
+
+@layer utilities {
+  .hero-gradient {
+    background: linear-gradient(
+      to right,
+      hsl(var(--secondary)),
+      hsl(var(--accent))
+    );
+  }
+  .circle-image {
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+  .benefit-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
 }

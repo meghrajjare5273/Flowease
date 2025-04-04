@@ -1,5 +1,5 @@
 import type React from "react";
-import type { Metadata } from "next/metadata";
+import type { Metadata } from "next";
 import { Playfair_Display, Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";

@@ -72,7 +72,7 @@ export function BenefitsSection() {
   };
 
   return (
-    <section id="benefits" className="py-20 bg-secondary/50">
+    <section id="benefits" className="py-20 bg-pink-50">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.h2

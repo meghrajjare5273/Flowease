@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useInView } from "framer-motion"
-import { useRef } from "react"
-import { Button } from "@/components/ui/button"
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+import { Button } from "@/components/ui/button";
 
 export function CTASection() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.2 })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
     <section className="py-20 hero-gradient">
@@ -27,20 +27,23 @@ export function CTASection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg mb-8"
           >
-            Join thousands of women who have discovered the natural way to period comfort
+            Join thousands of women who have discovered the natural way to
+            period comfort
           </motion.p>
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <Button size="lg" className="rounded-full text-lg px-8">
+            <Button
+              size="lg"
+              className="rounded-full text-lg px-8 bg-pink-400 hover:bg-pink-500"
+            >
               Shop Now
             </Button>
           </motion.div>
         </div>
       </div>
     </section>
-  )
+  );
 }
-

@@ -1,9 +1,14 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useInView } from "framer-motion"
-import { useRef } from "react"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const faqs = [
   {
@@ -28,21 +33,22 @@ const faqs = [
   },
   {
     question: "Is Flowease suitable for vegetarians and vegans?",
-    answer: "Yes, Flowease is 100% plant-based and suitable for both vegetarians and vegans.",
+    answer:
+      "Yes, Flowease is 100% plant-based and suitable for both vegetarians and vegans.",
   },
   {
     question: "How should I store Flowease?",
     answer:
       "Store Flowease in a cool, dry place away from direct sunlight. After opening, keep refrigerated and consume within 7 days for optimal freshness.",
   },
-]
+];
 
 export function FAQSection() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.2 })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
-    <section id="faq" className="py-20 bg-secondary/50">
+    <section id="faq" className="py-20 bg-pink-50">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.h2
@@ -73,7 +79,9 @@ export function FAQSection() {
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger className="text-left">{faq.question}</AccordionTrigger>
+                <AccordionTrigger className="text-left">
+                  {faq.question}
+                </AccordionTrigger>
                 <AccordionContent>{faq.answer}</AccordionContent>
               </AccordionItem>
             ))}
@@ -81,6 +89,5 @@ export function FAQSection() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
-

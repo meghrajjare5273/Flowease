@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useInView } from "framer-motion"
-import { useRef } from "react"
-import Image from "next/image"
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+import Image from "next/image";
 
 const ingredients = [
   {
@@ -36,14 +36,14 @@ const ingredients = [
     benefits: "Supports uterine health",
     image: "/placeholder.svg?height=120&width=120",
   },
-]
+];
 
 export function IngredientsSection() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.2 })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
-    <section id="ingredients" className="py-20 bg-accent/30">
+    <section id="ingredients" className="py-20 bg-pink-50">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
@@ -61,8 +61,9 @@ export function IngredientsSection() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-muted-foreground mb-8"
             >
-              We carefully select each ingredient for its proven benefits in supporting menstrual health. Our formula is
-              100% natural, organic, and free from artificial additives.
+              We carefully select each ingredient for its proven benefits in
+              supporting menstrual health. Our formula is 100% natural, organic,
+              and free from artificial additives.
             </motion.p>
 
             <motion.div
@@ -91,7 +92,9 @@ export function IngredientsSection() {
                   </div>
                   <div>
                     <h4 className="font-medium">{ingredient.name}</h4>
-                    <p className="text-sm text-muted-foreground">{ingredient.benefits}</p>
+                    <p className="text-sm text-muted-foreground">
+                      {ingredient.benefits}
+                    </p>
                   </div>
                 </motion.div>
               ))}
@@ -114,18 +117,20 @@ export function IngredientsSection() {
                 />
               </div>
               <div className="mt-6 space-y-4">
-                <h3 className="text-xl font-semibold">100% Organic Certified</h3>
+                <h3 className="text-xl font-semibold">
+                  100% Organic Certified
+                </h3>
                 <p className="text-muted-foreground">
-                  Our ingredients are sourced from trusted organic farms and undergo rigorous quality testing.
+                  Our ingredients are sourced from trusted organic farms and
+                  undergo rigorous quality testing.
                 </p>
               </div>
             </div>
 
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full rounded-2xl bg-primary/20 blur-xl -z-10 animate-float" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full rounded-2xl bg-pink-200/50 blur-xl -z-10 animate-float" />
           </motion.div>
         </div>
       </div>
     </section>
-  )
+  );
 }
-

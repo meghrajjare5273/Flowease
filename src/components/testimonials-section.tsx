@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useInView } from "framer-motion"
-import { useRef } from "react"
-import Image from "next/image"
-import { Star } from "lucide-react"
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+import Image from "next/image";
+import { Star } from "lucide-react";
 
 const testimonials = [
   {
@@ -31,14 +31,14 @@ const testimonials = [
     rating: 4,
     image: "/placeholder.svg?height=80&width=80",
   },
-]
+];
 
 export function TestimonialsSection() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.2 })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
-    <section id="reviews" className="py-20">
+    <section id="reviews" className="py-20 bg-pink-50">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.h2
@@ -55,7 +55,8 @@ export function TestimonialsSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-muted-foreground"
           >
-            Real experiences from women who have made Flowease part of their monthly routine
+            Real experiences from women who have made Flowease part of their
+            monthly routine
           </motion.p>
         </div>
 
@@ -72,11 +73,17 @@ export function TestimonialsSection() {
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
-                    className={`w-4 h-4 ${i < testimonial.rating ? "text-yellow-400 fill-yellow-400" : "text-gray-300"}`}
+                    className={`w-4 h-4 ${
+                      i < testimonial.rating
+                        ? "text-yellow-400 fill-yellow-400"
+                        : "text-gray-300"
+                    }`}
                   />
                 ))}
               </div>
-              <p className="mb-6 text-muted-foreground">&quot;{testimonial.content}&quot;</p>
+              <p className="mb-6 text-muted-foreground">
+                &quot;{testimonial.content}&quot;
+              </p>
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 rounded-full overflow-hidden">
                   <Image
@@ -89,7 +96,9 @@ export function TestimonialsSection() {
                 </div>
                 <div>
                   <h4 className="font-medium">{testimonial.name}</h4>
-                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {testimonial.role}
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -97,6 +106,5 @@ export function TestimonialsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

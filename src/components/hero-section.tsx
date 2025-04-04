@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export function HeroSection() {
   return (
@@ -17,19 +17,29 @@ export function HeroSection() {
           >
             <div className="space-y-2">
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-                Your Monthly Flow, <span className="text-primary">Perfected</span>
+                Your Monthly Flow,{" "}
+                <span className="text-pink-400">Perfected</span>
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground">Because your period deserves to be easy</p>
+              <p className="text-lg md:text-xl text-muted-foreground">
+                Because your period deserves to be easy
+              </p>
             </div>
             <p className="text-base md:text-lg">
-              A soothing blend of ginger, turmeric, cinnamon, and peppermint to help with cramps, bloating, and
-              discomfort during menstruation.
+              A soothing blend of ginger, turmeric, cinnamon, and peppermint to
+              help with cramps, bloating, and discomfort during menstruation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="rounded-full">
+              <Button
+                size="lg"
+                className="rounded-full bg-pink-400 hover:bg-pink-500"
+              >
                 Shop Now
               </Button>
-              <Button size="lg" variant="outline" className="rounded-full">
+              <Button
+                size="lg"
+                variant="outline"
+                className="rounded-full border-pink-200 hover:bg-pink-50"
+              >
                 Learn More
               </Button>
             </div>
@@ -37,7 +47,10 @@ export function HeroSection() {
             <div className="flex items-center space-x-4 pt-4">
               <div className="flex -space-x-2">
                 {[1, 2, 3].map((i) => (
-                  <div key={i} className="w-8 h-8 rounded-full border-2 border-background overflow-hidden">
+                  <div
+                    key={i}
+                    className="w-8 h-8 rounded-full border-2 border-background overflow-hidden"
+                  >
                     <Image
                       src={`/placeholder.svg?height=32&width=32`}
                       alt="Customer"
@@ -80,12 +93,14 @@ export function HeroSection() {
             >
               <div className="bg-white rounded-xl shadow-lg p-4 w-[180px]">
                 <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                    <span className="text-primary font-bold">100%</span>
+                  <div className="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center">
+                    <span className="text-pink-500 font-bold">100%</span>
                   </div>
                   <div>
                     <p className="text-sm font-medium">Natural Ingredients</p>
-                    <p className="text-xs text-muted-foreground">Organic & Pure</p>
+                    <p className="text-xs text-muted-foreground">
+                      Organic & Pure
+                    </p>
                   </div>
                 </div>
               </div>
@@ -99,12 +114,14 @@ export function HeroSection() {
             >
               <div className="bg-white rounded-xl shadow-lg p-4 w-[180px]">
                 <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 rounded-full bg-accent/50 flex items-center justify-center">
-                    <span className="text-accent-foreground font-bold">5★</span>
+                  <div className="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center">
+                    <span className="text-pink-500 font-bold">5★</span>
                   </div>
                   <div>
                     <p className="text-sm font-medium">Customer Rating</p>
-                    <p className="text-xs text-muted-foreground">Trusted by many</p>
+                    <p className="text-xs text-muted-foreground">
+                      Trusted by many
+                    </p>
                   </div>
                 </div>
               </div>
@@ -113,8 +130,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/10 blur-3xl -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-pink-100/40 blur-3xl -z-10" />
     </section>
-  )
+  );
 }
-

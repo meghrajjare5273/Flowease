@@ -8,8 +8,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="flex flex-col gap-4">
             <h3 className="text-xl font-bold">
-              Flow<span className="text-primary">ease</span>
-              <span className="text-primary">.</span>
+              Flow<span className="text-pink-400">ease</span>
+              <span className="text-pink-400">.</span>
             </h3>
             <p className="text-muted-foreground">
               Your monthly flow, perfected. Because your period deserves to be
@@ -18,21 +18,21 @@ export function Footer() {
             <div className="flex gap-4">
               <Link
                 href="#"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-pink-400 transition-colors"
               >
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
               <Link
                 href="#"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-pink-400 transition-colors"
               >
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
               <Link
                 href="#"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-pink-400 transition-colors"
               >
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
@@ -46,7 +46,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-pink-400 transition-colors"
                 >
                   All Products
                 </Link>
@@ -54,7 +54,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-pink-400 transition-colors"
                 >
                   Subscription
                 </Link>
@@ -62,7 +62,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-pink-400 transition-colors"
                 >
                   Gift Sets
                 </Link>
@@ -70,7 +70,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-pink-400 transition-colors"
                 >
                   Bundles
                 </Link>
@@ -84,7 +84,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-pink-400 transition-colors"
                 >
                   About Us
                 </Link>
@@ -92,7 +92,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-pink-400 transition-colors"
                 >
                   Blog
                 </Link>
@@ -100,7 +100,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-pink-400 transition-colors"
                 >
                   Careers
                 </Link>
@@ -108,7 +108,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-pink-400 transition-colors"
                 >
                   Contact
                 </Link>
@@ -122,7 +122,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-pink-400 transition-colors"
                 >
                   FAQ
                 </Link>
@@ -130,7 +130,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-pink-400 transition-colors"
                 >
                   Shipping & Returns
                 </Link>
@@ -138,7 +138,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-pink-400 transition-colors"
                 >
                   Privacy Policy
                 </Link>
@@ -146,7 +146,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-pink-400 transition-colors"
                 >
                   Terms of Service
                 </Link>

@@ -29,7 +29,7 @@ From the warming embrace of our Herbal Menstrual Support blend to the balancing 
 
 ## 🌐 Live Website
 
-Visit our live website: [flowease-theta.vercel.app](https://flowease-theta.vercel.app)
+Visit our live website: [flowease-theta.vercel.app](https://flowease-theta.vercel.app/)
 
 ## 📱 Responsive Design
 
